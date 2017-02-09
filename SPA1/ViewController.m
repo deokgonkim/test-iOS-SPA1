@@ -25,5 +25,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)doSomething:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"타이틀"
+                                                    message:@"메시지"
+                                                   delegate:self
+                                          cancelButtonTitle:@"Done" otherButtonTitles:nil];
+    
+    [alert show];
+}
 
 @end
